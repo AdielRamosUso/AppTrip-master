@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AppTrip</string>
+    <string name="correo">Ingrese un correo</string>
+    <string name="contraseña">Ingrese una contraseña</string>
+    <string name="usuario">Ingrese un nombre de usuario</string>
+    <string name="MensajeCarga">Cargando...</string>
+    <string name="ErrorDatos">Datos inválidos, intente nuevamente</string>
+    <string name="SignUp">Registrar</string>
+    <string name="MinValueNombre">Ingrese un nombre de usuario mayor de 4 caracteres</string>
+    <string name="EmailValido">Ingrese un correo valido</string>
+    <string name="ContraValida">Ingrese una contraseña mayor a 8 caracteres</string>
+    <string name="Error">No se pudo registrar</string>
+    <string name="home">Home</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="IngresePass">Ingrese una contraseña</string>
+    <string name="IngreseConfirmPass">Confirmar contraseña</string>
+    <string name="PassNoCoinciden">Las contraseñas no coinciden</string>
+</resources>

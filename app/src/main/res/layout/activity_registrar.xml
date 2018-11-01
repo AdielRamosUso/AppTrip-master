@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/lblTitulo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:layout_height="40dp"
+        android:text="Ingresa tus datos"
+        android:gravity="center"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_gravity="center"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/users"
+        app:met_floatingLabel="highlight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txtNombre"
+        android:hint="Escriba su nombre de usuario"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_gravity="center"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/email"
+        app:met_floatingLabel="highlight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txtEmail"
+        android:hint="Escriba su correo electrónico"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/TextLabel"
+        app:passwordToggleEnabled="true">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_gravity="center"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/lock"
+        app:met_floatingLabel="highlight"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtClaveR"
+        android:hint="Escriba su contraseña"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/TextLabel"
+        app:passwordToggleEnabled="true">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_gravity="center"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/lock"
+            app:met_floatingLabel="highlight"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtConfirmarClave"
+            android:hint="Confirmar contraseña"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnIngresar"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="Registrarse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/lblAccount"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes una cuenta?"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/lblIniciar"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E74C3C"
+        android:layout_gravity="center"/>
+</LinearLayout>
